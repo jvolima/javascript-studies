@@ -20,7 +20,8 @@ const gestureStrings = {
   'paper': '🖐',
   'scissors': '✌️',
   'dont': '🙅‍♂️',
-  'callme': '🤙'
+  'callme': '🤙',
+  'rockon': '🤟'
 }
 
 const base = ['Horizontal', 'Diagonal Up ']

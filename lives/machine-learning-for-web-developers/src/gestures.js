@@ -5,8 +5,8 @@ const paperGesture = new GestureDescription('paper'); // 🖐
 const scissorsGesture = new GestureDescription('scissors'); // ✌️
 const dontGesture = new GestureDescription('dont'); // 🙅‍♂️
 const callMeGesture = new GestureDescription('callme'); // 🤙
+const rockOnGesture = new GestureDescription('rockon') // 🤟
 
-  
 // Rock
 // -----------------------------------------------------------------------------
   
@@ -74,8 +74,19 @@ callMeGesture.addCurl(Finger.Middle, FingerCurl.FullCurl, 1.0)
 callMeGesture.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0)
 
 
+// Rock on
+
+// thumb, index and pink: stretched or half stretched
+rockOnGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0)
+rockOnGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0)
+rockOnGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0)
+
+// middle and ring: curled
+rockOnGesture.addCurl(Finger.Middle, FingerCurl.FullCurl, 1.0)
+rockOnGesture.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0)
+
 const gestures = [
-  rockGesture, paperGesture, scissorsGesture, dontGesture, callMeGesture
+  rockGesture, paperGesture, scissorsGesture, dontGesture, callMeGesture, rockOnGesture
 ]
 
 export {
